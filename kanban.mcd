@@ -1,0 +1,11 @@
+UTILISATEUR: _nom, prénom, email, password
+CREE, 0N UTILISATEUR, 11 LISTE
+LISTE: _nom
+APPARTIENT, 0N LISTE, 1N CARTE
+
+CARTE: _titre, position
+
+POSSEDE, 01 CARTE, 0N COULEUR
+COULEUR: _couleur
+LABEL: _label
+CONTIENT, 0N CARTE, 0N LABEL
