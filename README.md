@@ -74,3 +74,17 @@ Dans le même fichier SQL que précédemment, après la définition des tables, 
 Une fois le fichier complet, il est temps de l'executer. On peut se servir de la ligne de commande, ou d'un outil graphique type DBeaver, peu importe.
 
 Rappel, pour executer un fichier SQL en ligne de commande dans PostGres : `psql -U user -f chemin/vers/fichier.sql`
+
+
+### Models
+
+Maintenant que la base de données est prête et qu'elle contient des données de test, on peut créer nos modèles Sequelize.
+
+- Installer les packages nécessaires
+- Créer les dossier habituels (`app` et `app/models`)
+- Créer les modèles "façon Sequelize" (s'inspirer des projets précédents - OQuizz)
+- Ne pas oublier les associations !
+
+### Test
+
+C'est l'heure de jouer ! Créer un fichier `test.js`, y importer les modèles, et faire quelques requêtes pour vérifier que tout fonctionne !
