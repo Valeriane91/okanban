@@ -2,31 +2,17 @@
 
 |En tant que|Je veux pouvoir| Dans le but de|
 |---|---|---|
-|Utilisateur| Créer une liste| rajouter une liste au kanban
-|Utilisateur| Créer un carte | rajouter une carte dans une liste
-|utilisateur|visualiser le kanban| visualiser les listes| visualiser les cartes
-|utilisateur|attibuer une couleur ou changer la couleur de mes cartes
-|utilisateur|attribuer des labels aux cartes
-|utilisateur|pouvoir m'inscrire|avoir un compte| créer un kanban
-|utilisateur|me connecter à mon compte
-|utilisateur|me déconnecter de mon compte|fermer ma session
-|utilisateur|d'accéder à ma page de profil| consulter mon kanban
-|utilisateur|pouvoir modifier ma/mes listes persos|les mettre à jour
-|utilisateur|pouvoir supprimer mon compte|ne plus faire partie des listes
-|utilisateur|accéder au récap|visualiser mes/mon kanban et les listes
-|utilisateur|accéder un espace dédié|pouvoir gérer mes listes/cartes/kanban
-|utilisateur|garder les infos à jour|corriger d'éventuelles erreurs
-|utilisateur|afficher un formulaire d'ajout de listes/cartes permettant d'enrichir le kanban
-|utilisateur|pouvoir modifier un kanban|corriger d'éventuelles erreurs
-|admin|accéder à un espace dédié|gérer les différents utilisateurs
-|admin|afficher tous les utilisateurs enregistrés|accéder à la gestion des utilisateurs
-|admin|ajouter un utilisateur
-|admin|supprimer un utilisateur
-|admin|pouvoir contacter les utilisateurs|les aider ou leur communiquer des infos supplémentaires
-
-
-Différents types d'utilisateurs :
-- les "users" : vont pouvoir se connecter parce qu'il est inscrit 
-- auteur : qui va pouvoir créer des kanban/listes/cartes
-
-Les admin ont tous les pouvoirs.
+|Utilisateur| Créer une liste nommée| rajouter une liste au kanban|
+|Utilisateur| Créer un carte | rajouter une carte, avec un nom, dans une liste|
+|Utilisateur| Créeer un label | rajouter une nouveau label|
+|Utilisateur| Supprimer une liste | Supprimer une liste au Kanban|
+|Utilisateur| Supprimer une carte | Supprimer une carte dans une liste|
+|Utilisateur| supprimer un label | supprimer un label existant|
+|Utilisateur| Changer une carte de liste | D'attribuer une carte à une autre liste|
+|Utilisateur| Modifier le titre d'une carte | Changer le titre|
+|Utilisateur| Modifier la position d'une carte| visuelement modifier l'emplacement de la carte au sein de la liste|
+|Utilisateur| Modifier la couleur d'une carte| personnaliser la carte|
+|Utilisateur| Modifier le nom d'un label| alterer un  label existant|
+|Utilisateur| Assigner un label à une carte| Taguer une carte|
+|Utilisateur|Dé-assigner un label à une carte| Dé-taguer une carte|
+|Utilisateur| Modifier le nom d'une liste| Faire varier le nom d'une liste|
