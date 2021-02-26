@@ -19,6 +19,17 @@ Déssinez le MCD en utilisant l'outils de votre choix : un papier et un crayon, 
 
 N'hésitez pas à faire un tour sur la [fiche recap du MCD](https://kourou.oclock.io/ressources/fiche-recap/mcd-modele-conceptuel-de-donnees/).
 
+Code source du MCD au format MoCoDo
+
+```
+CARTE: titre, position, couleur
+POSSEDE, 0N CARTE, 0N LABEL
+LABEL: nom
+
+EST DANS, 0N LISTE, 11 CARTE
+LISTE: nom
+:
+```
 
 ## Étape 2 : User Stories
 
