@@ -36,3 +36,41 @@ LISTE: nom
 En tant que _client_, je veux _un document_ dans le but de _comprendre les fonctionnalités de mon application_.
 
 Complètez le tableau dans le fichier [user_stories.md](./user_stories.md).
+
+## Etape 3 : BDD
+
+### De "concept" à "logique"
+
+En se basant sur le MCD et en utilisant [les règles basiques de transformation en MLD](https://github.com/O-clock-Alumni/fiches-recap/blob/master/bdd/conception-04-mld.md), lister dans le fichier [doc/tables.md](./doc/tables.md) les tables à créer ainsi que les champs qu'elles vont contenir.
+
+Ne pas oublier de typer chaque champ de chaque table ! [Ici, la liste des types supportés par postgresl](https://www.postgresql.org/docs/9.2/datatype.html#DATATYPE-TABLE).
+
+### Pas de fondations, pas de palais
+
+Commencer par créer un utilisateur et une base de données pour notre projet.
+
+[La fiche récap est ici](https://github.com/O-clock-Alumni/fiches-recap/blob/master/bdd/confg-postgres.md).
+
+### Fichier de Définition des Données
+
+Une fois les tables listées, il est temps d'écrire un fichier SQL qui va contenir toutes les instructions pour créer ces tables!
+
+Garder la [fiche récap SQL](https://github.com/O-clock-Alumni/fiches-recap/blob/master/bdd/sql.md) sous le coude est une bonne idée :wink:
+
+Quelques règles de base :
+
+- Un seul fichier pour créer toutes les tables !
+- Toujours commencer par détruire une table "si elle existe" avant de tenter de la créer. Cela permet d'executer le fichier sans se soucier des runs précédents.
+- On peut (on doit?) écrire des commentaires en SQL, `/* Comme ceci */`.
+
+### Seeding
+
+Le seeding est une opération qui consiste à insérer des données fictive dans la base de données afin de pouvoir tester son bon fonctionnement et mettre la logique de notre conception à l'épreuve du feu.
+
+Dans le même fichier SQL que précédemment, après la définition des tables, écrire des instructions SQL pour insérer des données cohérentes dans toutes les tables. Ne pas oublier de remplir AUSSI les tables de liaison !!
+
+### Run SQL, run !
+
+Une fois le fichier complet, il est temps de l'executer. On peut se servir de la ligne de commande, ou d'un outil graphique type DBeaver, peu importe.
+
+Rappel, pour executer un fichier SQL en ligne de commande dans PostGres : `psql -U user -f chemin/vers/fichier.sql`
