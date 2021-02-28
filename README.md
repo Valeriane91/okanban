@@ -21,7 +21,8 @@ N'hésitez pas à faire un tour sur la [fiche recap du MCD](https://kourou.ocloc
 
 Code source du MCD au format MoCoDo
 
-```
+
+:```
 CARTE: titre, position, couleur
 POSSEDE, 0N CARTE, 0N LABEL
 LABEL: nom
