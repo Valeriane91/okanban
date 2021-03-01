@@ -12,7 +12,14 @@ DROP TABLE IF EXISTS "list",
 -- On créé les différentes tables
 CREATE TABLE IF NOT EXISTS "list" (
     "id" SERIAL PRIMARY KEY,
-    "name" TEXT NOT NULL  
+    "name" TEXT NOT NULL,
+    -- On créé un champs createdAt qui est de type
+    -- timestamp avec pouv valeur par déffaut la date et l'heure
+    -- au moment de l'insertion
+    -- On ne s'occupera pas de ces champs, ils seront géré
+    -- par sequelize
+    "created_at" TIMESTAMP DEFAULT NOW(),
+    "updated_at" TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS "card" (
@@ -23,12 +30,16 @@ CREATE TABLE IF NOT EXISTS "card" (
     -- ON delete cascade permet de supprimer automatiquement
     -- toutes les cartes qui sont associées à une liste lors de la
     -- suppression de cette dernière.
-    "list_id" INTEGER NOT NULL REFERENCES "list" ("id") ON DELETE CASCADE
+    "list_id" INTEGER NOT NULL REFERENCES "list" ("id") ON DELETE CASCADE,
+    "created_at" TIMESTAMP DEFAULT NOW(),
+    "updated_at" TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS "label" (
     "id" SERIAL PRIMARY KEY,
-    "name" TEXT NOT NULL
+    "name" TEXT NOT NULL,
+    "created_at" TIMESTAMP DEFAULT NOW(),
+    "updated_at" TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS "card_has_label" (
