@@ -12,3 +12,11 @@ POST   /lists      Ajoute une nouvelle liste
 PUT    /lists/:id  Modifie une liste
 PATCH  /lists/:id  Modifie une liste
 DELETE /lists/:id  Supprime une liste
+
+GET    /cards            Renvoyer toutes les cartes en JSON.
+GET    /lists/:id/cards   Renvoyer toutes les cartes d'une liste en JSON.
+GET    /cards/:id        Renvoyer UNE carte, en JSON.
+POST   /cards            Ajoute une nouvelle carte
+PUT    /cards/:id        Modifie une carte
+PATCH  /cards/:id        Modifie une carte
+DELETE /cards/:id        Supprime une carte
