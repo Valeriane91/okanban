@@ -17,7 +17,7 @@ Exemple :
  
  Si on veut résoudre les conflits manuellement, dans vs code on a  un fichier écrit en vert et la correction écrit en bleu.
 
-Cliquez dans vs code au dessus de ma partie sur "accepeter la modif entrante", ensuite, git add, git commit et git push.
+Cliquez dans vs code au dessus de ma partie sur "accepter la modif entrante", ensuite, git add, git commit et git push.
 
 Si l'ont souhaite importer les modifs dans une autre branche, se déplacer usr la branche préalablement : 
 

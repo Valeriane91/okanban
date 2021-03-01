@@ -88,3 +88,37 @@ Maintenant que la base de données est prête et qu'elle contient des données d
 ### Test
 
 C'est l'heure de jouer ! Créer un fichier `test.js`, y importer les modèles, et faire quelques requêtes pour vérifier que tout fonctionne !
+
+## jour 3 : Mise en place API
+
+### Archi
+
+Mettre en place l'architecture "classique" d'une projet express :
+
+- installer les dépendances nécessaires avec npm.
+- dossier `app/controllers`.
+- fichier `app/router.js`.
+- point d'entrée `index.js`.
+
+### Le Train-train Express
+
+Mettre en place le fichier `index.js`. Oui c'est vrai, c'est un peu toujours la même chose...
+
+Note: pensez qu'on va faire des routes POST ! (donc avec des body ...)
+
+### Premiers controller, premières routes
+
+En respectant au maximum les principes de l'architecture REST, et [le tableau de routes fait ensemble](./docs/api.md), implémentez tout ce que vous pouvez !
+
+- commencez plutôt par les routes GET
+- puis les POST
+- puis les PATCH
+- et enfin les DELETE
+- ceci n'est qu'un conseil ! si vous préférez faire toutes les "/list" d'abord, libre à vous !
+
+Pour tester toutes ces routes, il existe plusieurs solutions, mais la plus simple reste d'utiliser un petit logiciel :
+
+- [Insomnia](https://support.insomnia.rest/article/23-installation#ubuntu)
+- [POSTMAN](https://www.getpostman.com/)
+- [VSC REST client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- y'en a probablement d'autres...
