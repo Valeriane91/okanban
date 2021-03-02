@@ -1,38 +1,26 @@
 const express = require('express');
-
-
-//TODO : controllers à importer
-
-const cardController = require('./controllers/cardController');
-const listController = require('./controllers/listController.js');
-
 const router = express.Router();
+const listController = require('./controllers/listController');
+const cardController = require('./controllers/cardController');
 
-//TODO : routes à définir
-
-router.get('/lists', listController.getList);
-
-router.get('/lists/:id', listController.getListId);
-
-router.post('/lists', listController.doList);
-
-router.patch('/lists/:id', listController.patchList);
-
-router.delete('/lists/:id', listController.removeList);
-
-//affichage des cartes
-router.get('/cards', cardController.getCard);
-
-router.get('/lists/:id/cards', cardController.getCardList);
-
-router.get('/cards/:id', cardController.getCardId);
-
-router.post('/cards', cardController.doCard);
-
-router.patch('/cards/:id', cardController.patchCard);
-
-router.delete('/cards/:id', cardController.removeCard);
+router.get('/lists', listController.getAll);
+router.get('/lists/:id', listController.getOneById);
+router.post('/lists', listController.create);
+router.patch('/lists/:id', listController.update);
+router.put('/lists/:id', listController.updatePut);
+router.delete('/lists/:id', listController.delete);
 
 
-//on exporte le router pour y avoir accès dans index.js
+
+
+router.get('/cards', cardController.cardAll);
+router.get('/lists/:id/cards', cardController.getOneCardId);
+router.post('/cards', cardController.createCard);
+router.patch('/cards/:id', cardController.updateCard);
+router.put('/cards/:id', cardController.updateCard);
+router.delete('/cards/:id', cardController.deleteCard);
+
+
+
+
 module.exports = router;
